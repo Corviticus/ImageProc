@@ -26,7 +26,6 @@ Java_com_software_corvidae_imageproc_CameraActivity_ImageProcessing (
 
     /// Original image and grayscale copy
     jbyte* pNV21FrameData = env->GetByteArrayElements(NV21FrameData, 0);
-    Mat originalImage(height, width, CV_8UC4, (unsigned char *)pNV21FrameData);
     Mat gray_image(height, width, CV_8UC1, (unsigned char *)pNV21FrameData);
 
     /// Final Result image
@@ -40,12 +39,8 @@ Java_com_software_corvidae_imageproc_CameraActivity_ImageProcessing (
     /// create new cv::Mat, canny it and convert
     Mat cannyMat(height, width, CV_8UC1);
     Canny(blurred, cannyMat, lowThreshold, lowThreshold * ratio, 3);
-
-    Mat tempImage(height, width, CV_8UC4);
     cvtColor(cannyMat, finalImage, CV_GRAY2BGRA);
-
-   // finalImage = tempImage;
-
+    
     /// cleanup
     env->ReleaseByteArrayElements(NV21FrameData, pNV21FrameData, 0);
     env->ReleaseIntArrayElements(outPixels, poutPixels, 0);
