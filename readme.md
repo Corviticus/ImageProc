@@ -3,11 +3,11 @@
 An itroduction to using OpenCV in Android Studio without having the OpenCV Manager installed.
 This allows for lightweight aps that do not require the user to download and install yet another app.
 
-![alt text](screenshots/ImageProc1.png "Simple edge detection using Canny")
+![alt text](https://github.com/Corviticus/image_proc_ndk/tree/master/screenshots/ImageProc1.png "Simple edge detection using Canny")
 
-![alt text](screenshots/ImageProc2.png "Adjusting the slider changes the Canny threshold")
+![alt text](https://github.com/Corviticus/image_proc_ndk/tree/master/screenshots/ImageProc2.png "Adjusting the slider changes the Canny threshold")
 
-![alt text](screenshots/ImageProc3.png "Edge detection of objects is possible")
+![alt text](https://github.com/Corviticus/image_proc_ndk/tree/master/screenshots/ImageProc3.png "Edge detection of objects is possible")
 
 ## Motivation
 
@@ -17,7 +17,7 @@ use the library in such a manner as to not require the Opencv Manager app.
 
 ## Installation
 
-There are numerous examples outlining the usage of OpenCV with Android Studio. I have sued the more recent
+There are numerous examples outlining the usage of OpenCV with Android Studio. I have used the more recent
 method of using a CMake file to build the native code. Here are a few samples:
 https://developer.android.com/studio/projects/add-native-code.html
 https://github.com/jlhonora/opencv-android-sample
