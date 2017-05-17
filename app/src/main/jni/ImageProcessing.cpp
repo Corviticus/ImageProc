@@ -40,7 +40,7 @@ Java_com_software_corvidae_imageproc_CameraActivity_ImageProcessing (
     Mat cannyMat(height, width, CV_8UC1);
     Canny(blurred, cannyMat, lowThreshold, lowThreshold * ratio, 3);
     cvtColor(cannyMat, finalImage, CV_GRAY2BGRA);
-    
+
     /// cleanup
     env->ReleaseByteArrayElements(NV21FrameData, pNV21FrameData, 0);
     env->ReleaseIntArrayElements(outPixels, poutPixels, 0);
