@@ -3,9 +3,11 @@
 An introduction to using OpenCV in Android Studio without having the OpenCV Manager installed.
 This allows for lightweight apps that do not require the user to download and install yet another app.
 
-![picture](screenshots/ImageProc1.png)
-![picture](screenshots/ImageProc2.png)
-![picture](screenshots/ImageProc3.png)
+![ImageProc1](screenshots/ImageProc1.png)
+
+![ImageProc2](screenshots/ImageProc2.png)
+
+![ImageProc3](screenshots/ImageProc3.png)
 
 ## Motivation
 
