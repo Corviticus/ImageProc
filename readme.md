@@ -9,6 +9,10 @@ This allows for lightweight apps that do not require the user to download and in
 
 ![Document Edge Detection](screenshots/ImageProc3.jpg)
 
+As I am seemingly unable to embed the screenshots into this doc, some part of my screenshot processing
+must be the culprit. If interested in the screenshots, please look in the 'screenshots' folder. It 
+is time for breakfast...
+
 ## Motivation
 
 OpenCV is a complete vision library offering tools to perform a variety of useful image processing needs.
