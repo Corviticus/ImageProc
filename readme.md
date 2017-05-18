@@ -1,13 +1,11 @@
 ## Overview
 
-An itroduction to using OpenCV in Android Studio without having the OpenCV Manager installed.
-This allows for lightweight aps that do not require the user to download and install yet another app.
+An introduction to using OpenCV in Android Studio without having the OpenCV Manager installed.
+This allows for lightweight apps that do not require the user to download and install yet another app.
 
-![alt text](https://github.com/corviticus/image_proc_ndk/blob/master/screenshots/ImageProc1.png "Simple edge detection using Canny")
-
-![alt text](https://github.com/corviticus/image_proc_ndk/blob/master/screenshots/ImageProc2.png "Adjusting the slider changes the Canny threshold")
-
-![alt text](https://github.com/corviticus/image_proc_ndk/blob/master/screenshots/ImageProc3.png "Edge detection of objects is possible")
+![picture] (screenshots/ImageProc1.png)
+![picture] (screenshots/ImageProc2.png)
+![picture] (screenshots/ImageProc3.png)
 
 ## Motivation
 
