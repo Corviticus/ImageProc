@@ -3,18 +3,11 @@
 An introduction to using OpenCV in Android Studio without having the OpenCV Manager installed.
 This allows for lightweight apps that do not require the user to download and install yet another app.
 
-![Canny Edge Detection](screenshots/ImageProc1.png)
+![Canny Edge Detection](screenshots/ImageProc1.png?raw=true)
 
-![Adjust Threshold](screenshots/ImageProc2.png)
+![Adjust Threshold](screenshots/ImageProc2.png?raw=true)
 
-![Document Edge Detection](screenshots/ImageProc3.png)
-
-![Test Image Relative Path](screenshots/SantaRobert.jpg)
-
-![Test Image Absolute Path](/screenshots/SantaRobert.jpg)
-
-![Test Image Adjacent](SantaRobert.jpg)
-
+![Document Edge Detection](screenshots/ImageProc3.png?raw=true)
 
 ## Motivation
 
