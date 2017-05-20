@@ -364,7 +364,8 @@ public class CameraActivity extends AppCompatActivity implements TextureView.Sur
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Toast toast = Toast.makeText(getApplicationContext(), "Low Threshold: " + _seekBarValue, Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Low Threshold: " + _seekBarValue, Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER, 0, 0);
                 toast.show();
             }
@@ -424,13 +425,11 @@ public class CameraActivity extends AppCompatActivity implements TextureView.Sur
         System.loadLibrary("ImageProcessing");
     }
 
-    private Runnable DoImageProcessing = new Runnable()
-    {
-        public void run()
-        {
+    private Runnable DoImageProcessing = new Runnable() {
+        public void run() {
 
+            // set 'processing flag' true
             bProcessing = true;
-
             try {
                 ImageProcessing(
                         PreviewSizeWidth,   //
@@ -442,16 +441,18 @@ public class CameraActivity extends AppCompatActivity implements TextureView.Sur
                 e.printStackTrace();
             }
 
+            // load bitmap into image view, add some transparency so we can see the camera's preview and
+            // rotate. A nicer method would be to return the canny image (_imagePixels) without black background
             _transformBitmap.setPixels(_imagePixels, 0, PreviewSizeWidth, 0, 0, PreviewSizeWidth, PreviewSizeHeight);
             _cameraPreview.setAlpha(.60f);
             _cameraPreview.setImageBitmap(RotateBitmap(_transformBitmap, 90));
 
+            // done processing
             bProcessing = false;
         }
     };
 
-    public static Bitmap RotateBitmap(Bitmap source, float angle)
-    {
+    public static Bitmap RotateBitmap(Bitmap source, float angle) {
         Matrix matrix = new Matrix();
         matrix.postRotate(angle);
         return Bitmap.createBitmap(source, 0, 0, source.getWidth(), source.getHeight(), matrix, true);

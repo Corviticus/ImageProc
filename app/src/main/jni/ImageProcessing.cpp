@@ -1,7 +1,3 @@
-/*
-*  ImageProcessing.cpp
-*  Robert Collins
-*/
 
 #include <jni.h>
 #include <opencv2/core/core.hpp>
@@ -12,7 +8,7 @@ using namespace std;
 using namespace cv;
 
 extern "C"
-jboolean
+bool
 Java_com_software_corvidae_imageproc_CameraActivity_ImageProcessing (
         JNIEnv* env,
         const jobject thiz,
